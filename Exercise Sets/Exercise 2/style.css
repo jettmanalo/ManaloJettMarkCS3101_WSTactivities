@@ -19,6 +19,15 @@
     font-size: 3em;
 }
 
+a p {
+    text-align: center;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
 .box-1 h2 {
     margin-bottom: 8px;
 }
@@ -73,7 +82,10 @@
 }
 
 img {
-    width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+    width: 75%;
     height: auto;
 }
 
