@@ -10,9 +10,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url(assets/bg.avif);
+    background-size: cover;
 }
 
-.container {
+.row {
     display: flex;
     justify-content: space-between;
 }
@@ -21,11 +23,26 @@ section, img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 200px;
-    background: beige;
     margin: 8px;
     border-radius: 16px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 0.3s ease;
+}
+
+.center {
+    flex-direction: column;
+    color: white;
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+img:hover, section:hover {
+    transform: scale(1.05);
 }
 
 .rowspan {
