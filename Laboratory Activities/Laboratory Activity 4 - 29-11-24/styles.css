@@ -1,5 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair:ital,opsz,wght@0,5..1200,700;1,5..1200,700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    height: 100vh;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/028/330/374/original/abstract-elegant-3d-background-with-black-geometric-shapes-spin-slow-animation-frame-background-for-copy-space-4k-resolution-black-and-white-video.jpg);
+    background-size: cover;
+    width: 75%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+/* Styling */
+img {
+    height: 10rem;
+}
+
+h2 {
+    font-family: "Playfair", serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 2.7rem;;
+}
+
+p, li {
+    font-size: 2 rem;
+    line-height: 1.5;
+}
+
+button, input {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    margin-top: 1rem;
+    margin-right: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.box {
+    background: rgba( 238, 238, 238, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 2rem;
+    min-height: 28vh;
+}
+
+.icons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    padding: 1rem;
+}
+
+.icon:hover {
+    background-color: white;
+}
+
+.icon:hover i {
+    color: black;
+}
+
+
+/* Layout */
+body, .row-1, .row-2, .row-3, .col-2, .box-1, .box-3, .box-4 {
+    display: flex;
+}
+
+body, .row-1, .row-2, .row-3, .col-2 {
+    gap: 1rem;
+}
+
+body, .col-2, .box-1, .box-3, .box-4 {
+    flex-direction: column;
+}
+
+.row-3 div, .row-2 div, #skills-list section, .box-3 button, .box-4 button {
+    width: 50%;
+}
+
+.box-1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box-1 p, .box-2 p, .box-3 p, .box-4 p, .box-6 h2 {
+    width: 75%;
+}
+
+.box-3, .box-4 {
+    justify-content: space-between;
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+}
+
+#education-list {
+    display: none;
+}
+
+#education-list p {
+    width: 100%;
 }
