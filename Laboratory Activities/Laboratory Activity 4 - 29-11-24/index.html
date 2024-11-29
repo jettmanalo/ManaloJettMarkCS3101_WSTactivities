@@ -4,10 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jett Mark Manalo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <div></div>
+    <div class="row-1">
+      <!-- Profile -->
+      <div class="box box-1">
+        <img src="https://cdn-icons-png.flaticon.com/512/924/924915.png" alt="">
+        <h2>Jett Manalo</h2>
+        <p>Full Stack Web Developer</p>
+        <p>
+          Crafting seamless digital experiences, one line of code at a time.
+        </p>
+      </div>
+
+      <div class="col-2">
+        <!-- Welcome -->
+        <div class="box box-2">
+          <h2>Welcome, Jett here!</h2>
+          <p>
+            An Aspiring Full Stack Web Developer, studying at Batangas State
+            University, taking the course of Bachelor of Science in Computer
+            Science
+          </p>
+        </div>
+
+        <div class="row-2">
+          <!-- Technical Skills -->
+          <div class="box box-3">
+            <h2 id="skills-header">Technical Skills</h2>
+            <p id="skills-text">View my Tech Stack and Capabilities here.</p>
+            <ul id="skills-list">
+              <section>
+                <li>MongoDB</li>
+                <li>Express</li>
+                <li>React</li>
+                <li>Node</li>
+              </section>
+              <section>
+                <li>TypeScript</li>
+                <li>JavaScript ES6+</li>
+                <li>HTML/CSS</li>
+                <li>Tailwind CSS</li>
+              </section>
+            </ul>
+            <button id="toggle-skills" onclick="toggleSkills()">Learn More</button>
+          </div>
+
+          <!-- Education -->
+          <div class="box box-4">
+            <h2 id="education-header">Education</h2>
+            <p id="education-text">Relevant degree and certifications are listed here.</p>
+            <ul id="education-list">
+              <li>Bachelor of Science in Computer Science</li>
+              <li>Science, Technology, Engineering, and Mathematics (STEM)</li>
+            </ul>
+            <button id="toggle-education" onclick="toggleEducation()">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-3">
+      <!-- Socials -->
+      <div class="box box-5">
+        <h2>Socials</h2>
+        <section class="icons">
+          <a href="https://linkedin.com" class="icon" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com" class="icon" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:example@example.com" class="icon" target="_blank">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://facebook.com" class="icon" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="tel:+123456789" class="icon" target="_blank">
+            <i class="fas fa-phone"></i>
+          </a>
+        </section>
+      </div>
+
+      <!-- Email -->
+      <div class="box box-6">
+        <h2>Let's talk!</h2>
+        <p>Connect with me and discuss about Web Development.</p>
+        <form action="">
+          <input type="email" placeholder="Your email address" required />
+          <button>Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
